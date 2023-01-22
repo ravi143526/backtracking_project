@@ -35,11 +35,13 @@
         <li>E is good. Congratulations!</li>
     </ol>
     <br>
-    <font color="#424242">
-    <summary>
-        In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices we could make. There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we have. (If we do have an actual tree data structure, backtracking on it is called depth-first tree searching.)
-    </summary>
-   </font>
+   <table bgcolor="#F8F8F8" color="#424242">
+    <thead>
+        <tr>
+            <td>In this example we drew a picture of a tree. The tree is an abstract model of the possible sequences of choices we could make. There is also a data structure called a tree, but usually we don't have a data structure to tell us what choices we have. (If we do have an actual tree data structure, backtracking on it is called depth-first tree searching.)</td>
+        </tr>
+    </thead>
+   </table>
     <br>
     <hr>
     <h3><b><font color="#424242">The backtracking algorithm.</font></b></h3>
@@ -58,12 +60,14 @@
         }
     </pre>
     </font>
-    <font color="#424242">
-    <summary>
-        Notice that the algorithm is expressed as a boolean function. This is essential to understanding the algorithm. If solve(n) is true, that means node n is part of a solution--that is, node n is one of the nodes on a path from the root to some goal node. We say that n is solvable. If solve(n) is false, then there is no path that includes n to any goal node.
-    </summary>
-    <h5>How does this work?</h5>
-    </font>
+    <table bgcolor="#F8F8F8" color="#424242">
+        <thead>
+            <tr>
+                <td>Notice that the algorithm is expressed as a boolean function. This is essential to understanding the algorithm. If solve(n) is true, that means node n is part of a solution--that is, node n is one of the nodes on a path from the root to some goal node. We say that n is solvable. If solve(n) is false, then there is no path that includes n to any goal node.</td>
+            </tr>
+        </thead>
+    </table>
+    <font color="#424242"><h5>How does this work?</h5></font>
     <ul>
         <li>If any child of n is solvable, then n is solvable.</li>
         <li>If no child of n is solvable, then n is not solvable.</li>
@@ -705,9 +709,13 @@
     </ol>
    </b>  
 </font>
-<p>
-    Notice that the solution is given in reverse order: BLACK starts out on the left and WHITE on the right, as in the last line. I've added line numbers to the actual output in order to emphasize this point. Backtracking always produces its results (sequence of choices) in reverse order; it is up to you, the programmer, to reverse the results again to get them in the correct order.
-</p>
+<table bgcolor="#F8F8F8" color="#424242">
+    <thead>
+        <tr>
+            <td>Notice that the solution is given in reverse order: BLACK starts out on the left and WHITE on the right, as in the last line. I've added line numbers to the actual output in order to emphasize this point. Backtracking always produces its results (sequence of choices) in reverse order; it is up to you, the programmer, to reverse the results again to get them in the correct order.</td>
+        </tr>
+    </thead>
+</table>
 </font>
 </body>
 </html>
